@@ -9,3 +9,7 @@
 5.times do
   Article.create(title: Faker::Book.title, body: Faker::Lorem.sentence)
 end
+
+5.times do
+  User.create(email: Faker::Internet.email, password: 'almafa123')
+end
